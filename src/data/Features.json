@@ -1,18 +1,18 @@
 [
-  { "id": 1, "imageSrc": "/features/group 133.svg", "text": "Floating Pools" },
+  { "id": 1, "imageSrc": "/features/group133.svg", "text": "Floating Pools" },
   {
     "id": 2,
-    "imageSrc": "/features/group 134.svg",
+    "imageSrc": "/features/group134.svg",
     "text": "Spacious Cabins Like Rooms"
   },
   {
     "id": 3,
-    "imageSrc": "/features/group 135.svg",
+    "imageSrc": "/features/group135.svg",
     "text": "Sea Facing Swimming Pools"
   },
   {
     "id": 4,
-    "imageSrc": "/features/group 136.svg",
+    "imageSrc": "/features/group136.svg",
     "text": "Gymnasium & Fitness"
   }
 ]
