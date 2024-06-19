@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import ApplyFonts from "@/components/ApplyFont";
 
@@ -8,24 +8,19 @@ const poppins = Poppins({
   weight: "400",
 });
 
-export const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   title: "DAMAC",
   description: "This app is from Harbour lights",
   icons: {
-    icon: "./favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={poppins.className}>
