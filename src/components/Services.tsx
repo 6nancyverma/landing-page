@@ -1,35 +1,17 @@
+// src/components/Services.tsx
 "use client";
+
 import React, { useState, useEffect } from "react";
 import ServiceCard from "./ServiceCard";
+import servicesData from "../data/Services.json";
 
-const servicesData = [
-  {
-    id: 1,
-    icon: "/service/booking.svg",
-    title: "book with",
-    subtitle: "ONLY 20%",
-  },
-  {
-    id: 2,
-    icon: "/service/payment.svg",
-    title: "payment plan",
-    subtitle: "EASY 70/30",
-  },
-  {
-    id: 3,
-    icon: "/service/handover.svg",
-    title: "handover on",
-    subtitle: "Q2 2027",
-  },
-  {
-    id: 4,
-    icon: "/service/area.svg",
-    title: "area starts from",
-    subtitle: "700 SQMT",
-  },
-];
-
-function Services() {
+interface Service {
+  id: number;
+  icon: string;
+  title: string;
+  subtitle: string;
+}
+const Services: React.FC = () => {
   const [highlightedIndex, setHighlightedIndex] = useState(0);
 
   useEffect(() => {
@@ -51,7 +33,7 @@ function Services() {
       {/* Desktop view */}
       <div className="hidden md:block">
         <div className="flex gap-2 justify-between items-center w-[80%] py-8 px-16 mx-auto">
-          {servicesData.map((service, index) => (
+          {servicesData.map((service: Service, index: number) => (
             <div
               key={service.id}
               className={`relative transition-all ${
@@ -84,12 +66,12 @@ function Services() {
 
         {/* Navigation ellipses */}
         <div className="absolute -mt-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {servicesData.map((_, index) => (
+          {servicesData.map((_, index: number) => (
             <button
               key={index}
               type="button"
               className={`w-3 h-3 rounded-full ${
-                index === highlightedIndex ? "bg-[#00357B]" : "bg-gray-300"
+                index === highlightedIndex ? "bg-blue-200" : "bg-gray-300"
               } transition-all delay-[0.3s]`}
               aria-label={`Slide ${index + 1}`}
               onClick={() => handleSlideClick(index)}
@@ -99,6 +81,6 @@ function Services() {
       </div>
     </div>
   );
-}
+};
 
 export default Services;

@@ -11,12 +11,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, subtitle }) => {
   return (
     <div className="m-auto p-4">
       <div className="relative w-12 h-12 mb-2 m-auto">
-        <Image src={icon} alt="Icon" layout="fill" objectFit="contain" />
+        <Image src={icon} alt="Icon" fill />
       </div>
-      <h4 className="text-[#00357B] text-[1rem] leading-4 m-auto capitalize text-center mb-2">
+      <h4 className="text-blue-200 text-[1rem] leading-4 m-auto capitalize text-center mb-2">
         {title}
       </h4>
-      <h1 className="text-[#00357B] text-[1.875rem] leading-[1.875rem] tracking-[3%] m-auto text-center">
+      <h1 className="text-blue-200 text-[1.875rem] leading-[1.875rem] tracking-[3%] m-auto text-center">
         {subtitle}
       </h1>
       <div>

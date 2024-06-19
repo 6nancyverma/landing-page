@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "/service/booking.svg",
+    "title": "book with",
+    "subtitle": "ONLY 20%"
+  },
+  {
+    "id": 2,
+    "icon": "/service/payment.svg",
+    "title": "payment plan",
+    "subtitle": "EASY 70/30"
+  },
+  {
+    "id": 3,
+    "icon": "/service/handover.svg",
+    "title": "handover on",
+    "subtitle": "Q2 2027"
+  },
+  {
+    "id": 4,
+    "icon": "/service/area.svg",
+    "title": "area starts from",
+    "subtitle": "700 SQMT"
+  }
+]

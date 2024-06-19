@@ -12,18 +12,18 @@ const HeroMobile = () => {
         width={900}
         height={900}
         quality={100}
-        className="w-full h-full"
+        className="w-full h-full object-cover"
       />
       <div className=" absolute top-[0.5rem] w-full flex items-center justify-center flex-col gap-16">
         <Navbar />
-        <div className="flex justify-between items-center w-[90%] flex-col  gap-16 lg:flex-row sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center w-[90%] flex-col gap-16 sm:px-6 lg:px-8 lg:flex-row">
           <div className="gap-6 flex flex-col  justify-start ">
             <div>
               <h1 className="text-[2.3125rem] text-white font-medium leading-[2.875rem] md:text-[3rem] md:leading-[3.9rem]">
                 HARBOUR LIGHTS
               </h1>
               <h1 className="text-[2.3125rem] text-white font-medium leading-[2.875rem] md:text-[3rem] md:leading-[3.9rem]">
-                DE <span className="text-[#17ABFF]">GRESOGONO</span>
+                DE <span className="text-blue-100">GRESOGONO</span>
               </h1>
             </div>
             <div>
@@ -35,10 +35,10 @@ const HeroMobile = () => {
               </h3>
             </div>
             <div className="flex gap-4 flex-col text-[#E7EBEF] w-full">
-              <div className="bg-black bg-opacity-50 p-3 2xl:p-4 border-l-4 border-[#17ABFF] text-[1rem] ">
+              <div className="bg-black bg-opacity-50 p-3 2xl:p-4 border-l-4 border-blue-100 text-[1rem] ">
                 Rental Returns of <span className="font-bold">UPTO 11%**</span>
               </div>
-              <div className="bg-black bg-opacity-50 p-3 2xl:p-4 border-l-4 border-[#17ABFF] text-[1rem] ">
+              <div className="bg-black bg-opacity-50 p-3 2xl:p-4 border-l-4 border-blue-100 text-[1rem] ">
                 Capital Appreciation of{" "}
                 <span className="font-bold">UPTO 32%**</span>
               </div>
@@ -72,7 +72,7 @@ const HeroDesktop = () => {
                 HARBOUR LIGHTS
               </h1>
               <h1 className="text-[2.5rem] xl:text-[3rem] text-white font-medium leading-[2.9rem] xl:leading-[3.9rem]">
-                DE <span className="text-[#17ABFF]">GRESOGONO</span>
+                DE <span className="text-blue-100">GRESOGONO</span>
               </h1>
             </div>
             <div>
@@ -84,10 +84,10 @@ const HeroDesktop = () => {
               </h3>
             </div>
             <div className="flex gap-4 flex-col text-[#E7EBEF] w-[70%] 2xl:w-full">
-              <div className="bg-black bg-opacity-50 p-3 border-l-4 border-[#17ABFF] text-[0.775rem] xl:text-[1rem] 2xl:text-[1.5rem] 2xl:p-4 ">
+              <div className="bg-black bg-opacity-50 p-3 border-l-4 border-blue-100 text-[0.775rem] xl:text-[1rem] 2xl:text-[1.5rem] 2xl:p-4 ">
                 Rental Returns of <span className="font-bold">UPTO 11%**</span>
               </div>
-              <div className="bg-black bg-opacity-50 p-3 border-l-4 border-[#17ABFF] text-[0.775rem] xl:text-[1rem] 2xl:text-[1.5rem] 2xl:p-4">
+              <div className="bg-black bg-opacity-50 p-3 border-l-4 border-blue-100 text-[0.775rem] xl:text-[1rem] 2xl:text-[1.5rem] 2xl:p-4">
                 Capital Appreciation of{" "}
                 <span className="font-bold">UPTO 32%**</span>
               </div>

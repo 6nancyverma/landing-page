@@ -1,31 +1,19 @@
+// src/components/Features.tsx
 import React from "react";
 import Image from "next/image";
 import FeaturesCard from "./FeaturesCard";
 import Button from "./Button";
-import Aminities from "./Aminities";
+import featuresData from "../data/Features.json";
+import Amenities from "./Amenities";
 
 interface Feature {
   id: number;
   imageSrc: string;
   text: string;
 }
-const featuresData: Feature[] = [
-  { id: 1, imageSrc: "/features/group 133.svg", text: "Floating Pools" },
-  {
-    id: 2,
-    imageSrc: "/features/group 134.svg",
-    text: "Spacious Cabins Like Rooms",
-  },
-  {
-    id: 3,
-    imageSrc: "/features/group 135.svg",
-    text: "Sea Facing Swimming Pools",
-  },
-  { id: 4, imageSrc: "/features/group 136.svg", text: "Gymnasium & FItness" },
-];
 const Features: React.FC = () => {
   return (
-    <div className=" py-8 md:py-12 w-full md:w-[85%] m-auto">
+    <div className="py-8 md:py-12 w-full md:w-[85%] m-auto">
       <div>
         <Image
           src="/features/harberLights.svg"
@@ -33,11 +21,11 @@ const Features: React.FC = () => {
           width={300}
           height={200}
           quality={100}
-          className="m-auto py-[2rem] px-[5rem]  md:p-8 "
+          className="m-auto py-[2rem] px-[5rem] md:p-8"
         />
       </div>
-      <div className="container mx-auto  px-4">
-        <h1 className="text-[1.9375rem] md:text-[2.25rem] text-center leading-[2.9375rem] mb-4 text-[#00357B] font-medium ">
+      <div className="container mx-auto px-4">
+        <h1 className="text-[1.9375rem] md:text-[2.25rem] text-center leading-[2.9375rem] mb-4 text-blue-200 font-medium">
           FEATURES & AMENITIES
         </h1>
         <p className="text-[1rem] leading-6 text-center mb-8 md:mb-12 w-[70%] m-auto">
@@ -47,7 +35,7 @@ const Features: React.FC = () => {
           bliss.
         </p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuresData.map((feature) => (
+          {featuresData.map((feature: Feature) => (
             <FeaturesCard
               key={feature.id}
               imageSrc={feature.imageSrc}
@@ -56,8 +44,8 @@ const Features: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className=" my-8 px-4 ">
-        <p className="text-[#686868] text-center m-auto md:text-right text-[0.625rem] w-[90%] md:w-full my-4  leading-[0.9375rem] md:leading-[2.9375rem] tracking-[3%] px-4 ">
+      <div className="my-8 px-4">
+        <p className="text-[#686868] text-center m-auto md:text-right text-[0.625rem] w-[90%] my-4 leading-[0.9375rem] tracking-[3%] px-4 md:w-full md:leading-[2.9375rem]">
           *T&Cs apply | ** Based on similar branded projects in the last 2
           years. Source 1 | Source 2
         </p>
@@ -70,7 +58,7 @@ const Features: React.FC = () => {
           </Button>
         </div>
       </div>
-      <Aminities />
+      <Amenities />
     </div>
   );
 };

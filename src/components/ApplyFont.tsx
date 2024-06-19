@@ -12,7 +12,7 @@ const ApplyFonts = () => {
   return (
     <style jsx global>{`
       h1 {
-        font-family: ${oswald.style.fontFamily}, sans-serif;
+        font-family: ${oswald.style.fontFamily}, poppins;
       }
     `}</style>
   );

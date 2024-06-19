@@ -15,7 +15,7 @@ const FeaturesCard: React.FC<FeaturesCardProps> = ({ imageSrc, text }) => {
         height={500}
         className="mb-2 md:mb-4"
       />
-      <p className="text-center text-[#00357B] font-semibold text-[0.75rem] md:text-[1rem] leading-5 w-[90%] md:w-[70%]">
+      <p className="text-center text-blue-200 font-semibold text-[0.75rem] leading-5 w-[90%] md:w-[70%]  md:text-[1rem]">
         {text}
       </p>
     </div>

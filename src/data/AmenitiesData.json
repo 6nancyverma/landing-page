@@ -1,0 +1,32 @@
+[
+  {
+    "src": "/aminities/exterior.png",
+    "alt": "exterior",
+    "width": 1000,
+    "height": 800
+  },
+  {
+    "src": "/aminities/washroom.png",
+    "alt": "washroom",
+    "width": 400,
+    "height": 300
+  },
+  {
+    "src": "/aminities/pool.png",
+    "alt": "pool",
+    "width": 400,
+    "height": 300
+  },
+  {
+    "src": "/aminities/room.png",
+    "alt": "room",
+    "width": 400,
+    "height": 300
+  },
+  {
+    "src": "/aminities/reception.png",
+    "alt": "reception",
+    "width": 400,
+    "height": 300
+  }
+]

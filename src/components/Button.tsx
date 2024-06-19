@@ -31,15 +31,15 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
-      "bg-blue-light text-white border-2 border-blue-light  font-semibold leading-[1.21875rem]  hover:bg-[#52b7f2] hover:border-[#52b7f2]  ",
+      "bg-blue-100 text-white border-2 border-blue-100 font-semibold leading-[1.21875rem] hover:bg-[#52b7f2] hover:border-[#52b7f2]  ",
     secondary:
-      "bg-background border-2 border-[#17ABFF] text-[#17ABFF] font-bold  leading-[1.21875rem]  hover:border-[#52b7f2]",
+      "bg-background border-2 border-blue-100 text-blue-100 font-bold leading-[1.21875rem] hover:border-[#52b7f2]",
     danger:
-      "bg-red-500 text-white hover:bg-red-600 focus:ring-red-500   leading-[1.21875rem]",
+      "bg-red-500 text-white hover:bg-red-600 focus:ring-red-500 leading-[1.21875rem]",
     bluePrimary:
-      "bg-[#00357B] text-white border-2 border-[#00357B] focus:ring-[#00357B]  font-semibold leading-[1.21875rem] hover:bg-[#2e5484] hover:border-[#2e5484] ",
+      "bg-blue-200 text-white border-2 border-blue-200 font-semibold leading-[1.21875rem] hover:bg-[#2e5484] hover:border-[#2e5484] ",
     blueSecondary:
-      "bg-background border-2 border-[#00357B] text-[#00357B] font-bold  leading-[1.21875rem]  hover:border-[#2e5484] hover:text-[#2e5484]",
+      "bg-background border-2 border-blue-200 text-blue-200 font-bold leading-[1.21875rem] hover:border-[#2e5484] hover:text-[#2e5484]",
   };
 
   const sizeStyles: Record<ButtonSize, string> = {
